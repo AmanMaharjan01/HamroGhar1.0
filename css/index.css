@@ -240,7 +240,14 @@ body
     color: white;
     cursor: pointer;
     margin-bottom: 0px;
+    transition: .1s;
 }
+
+#about .container .content #learnmore-button:hover
+{
+   background-color: #5399cf;
+}
+
 
 .services
 {
@@ -293,6 +300,15 @@ body
      margin-top: 50px;
 }
 
+.services .row #services-logo
+{
+    transition: .2s;
+}
+
+.services .row #services-logo:hover
+{
+  transform: scale(1.2);
+}
 
 
 #subscribe
@@ -377,6 +393,7 @@ body
   top: 40%;
   left: 35%;
 }
+
 #footer .container2 #list ul
 {
  list-style: none;
