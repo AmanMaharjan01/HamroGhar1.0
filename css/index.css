@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900|Playfair+Display:400,700');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Nanum+Myeongjo:wght@700&family=Tajawal&display=swap');
 
 
 
@@ -170,15 +171,12 @@ body
 {
   position: relative;
   width: 100%;
-  height: 180px; 
+  height: 200px; 
   background-color: #ffffff;
+  font-family: 'Nanum Myeongjo', serif;
 }
 
-#review .container
-{
-  display: flex;
-}
-#review .container .review1,.review2,.review3
+#review .container  #review1, #review2, #review3
 {
   width: 500px;
   height: 200px;
@@ -207,17 +205,27 @@ body
   width: 100%;
   height: 500px;
   background-color: #F1EFEF;
+  font-family: 'Nanum Myeongjo', serif;
 }
 
 #about .container
 {
   margin-top: 10px;
 }
+
+#about .content #bed
+{
+    float: right;
+    width: 68%;
+    height: 98%;
+    padding-top: 7px;
+    padding-right: 5px;
+}
+
 #about .container .content
 {
   position: absolute;
   top: 16%;
-  width: 73%;
   height: 350px;
   background-color: white;
 }
@@ -233,21 +241,25 @@ body
 
 #about .container .content #learnmore-button
 { 
-    width: 315px;
+    width: 300px;
     height: 50px;
     background-color: #2B95CA;
     border: 1px solid #2B95CA;
     color: white;
     cursor: pointer;
     margin-bottom: 0px;
-    transition: .1s;
 }
 
-#about .container .content #learnmore-button:hover
+#about .content #learnmore-button:hover
 {
    background-color: #5399cf;
 }
 
+
+#about .row
+{
+  height: 100%;
+}
 
 .services
 {
@@ -255,6 +267,7 @@ body
   width: 100%;
   height: 400px;
   background-color: #F1EFEF;
+  font-family: 'Tajawal', sans-serif;
 }
 
 .services .row .service1, .service2, .service3
@@ -313,55 +326,88 @@ body
 
 #subscribe
 {
+
+  padding-top: 20px;
   width: 100%;
   height: 300px;
   background-color: #F1EFEF;
 }
-#subscribe .container
+#subscribe .subscribe-content
 {
+  width: 100%;
+  height: 300px;
+}
+
+#subscribe .subscribe-content .content
+{
+  display: inline-block;
   position: relative;
   top: 50%;
-  left: 22%;           
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-family: 'Tajawal', sans-serif;
 }
-#subscribe .container .text1
+
+#subscribe .subscribe-content .content .sub
 {
-   text-align: center;
-   font-size: 35px;
-   position: absolute;
-   bottom: 100%;
-   left: 3%;
+    padding-top: 15px;
 }
-#subscribe .container .text2
+
+#subscribe .subscribe-content .content .sub input
 {
-  font-size: 20px;
+  width: 300px;
+  height: 40px;
+  border:none;
+  padding-left: 5px;
 }
-#subscribe .container .sub 
+
+#subscribe .subscribe-content .content .sub button
 {
-  padding-top: 15px;
-  position: relative;
-  right: 4%;
-  font-family: 'Poppins', sans-serif;
+  height: 40px;
+  border: none;
+  color: white;
 }
-#subscribe .container .sub .subs
+
 {
-  width: 35%;
-  height: 50px;
-  border-radius: 5px 5px 5px 5px;
-  border: 5px solid #cdcdcd; 
+  text-align: center;
 }
- #subscribe .container .sub #subbut
- {
-  height: 50px;
-  border: 5px solid #cdcdcd; 
-  position: absolute;
-  left: 34%;       
- }
  #footer
  {
   width: 100%;
   height: 400px;
   background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
  }
+ #footer .container #logos 
+  {
+     height: 60px;
+  }
+  #footer .container .row
+  {  
+      margin: 0px;
+      height: 180px;
+  }
+
+  #footer .container .row ul
+  {
+    padding-left: 150px;
+    padding-top: 50px;
+  }
+  #footer .container .row ul li
+  {
+    list-style: none;
+  }
+  #footer .container .row ul li a
+  {
+    color: white;
+    font-size: 18px;
+    font-family: 'Tajawal', sans-serif;
+  }
+  #footer .container .row ul li a:hover
+  {
+    text-decoration:none;
+    color: lightblue;
+  }
+
  #footer .container #logos ul
  {
   list-style: none;
@@ -415,79 +461,97 @@ body
   height: 150px;
   background-color: #F1EFEF;
 }
-#end .container
-{
-  position: relative;
-  left: 30%;
-}
+
+@media only screen and (max-width: 1500px) {
+
+  #about .container .content
+   {
+  height: 380px;
+   }
+  }
 @media only screen and (max-width: 1400px) {
   .caption .c2
   {
      position: absolute;
-     top: 55%;
-     left: 4%;  
-     transform: translate();
-  }
-  .caption .c1
-  {
-      position: absolute;
-      top: 30%;
-      left: 3%;
-  }
-}
-@media only screen and (max-width: 1332px) {
-  .caption .c2
-  {
-     position: absolute;
-     top: 55%;
+     top: 50%;
      left: 4%; 
   }
   .caption .c1
   {
       position: absolute;
-      top: 30%;
+      top: 20%;
       left: 3%;
   }
 }
-@media only screen and (max-width: 1330px) {
-  .caption .c2
-  {
-     position: absolute;
-     top: 70%;
-     left: 4%; 
-  }
-  .caption .c1
-  {
-      position: absolute;
-      top: 30%;
-      left: 3%;
-      width: 600px;
-  }
-}
-  @media only screen and (max-width: 1500px) {
 
-  #about .container .content
+@media only screen and (max-width: 1285px) {
+  .caption .c2
   {
-  height: 380px;
+     position: absolute;
+     top: 50%;
+     left: 4%; 
+
+  }
+  .caption .c1
+  {
+      position: absolute;
+      top: 20%;
+      left: 3%;
+      font-size: 50px;
+  }
+
+  #about .content #bed
+    {
+         height: 85%;
+         width: 65%;
+         padding-top: 45px;
+         padding-right: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 1200px)
+{
+    #review
+  {
+    height: 300px;
+  }
+  #review .container .row #review1,#review2,#review3
+  {
+  width: 500px;
+  padding: 15px;
+  padding-top: 35px;
    }
-   
-   #about .container .content #learnmore-button
+  #review .container #img1,#img2,#img3
+   {
+    margin-top: 0px;
+    margin-left: 90px;
+   }
+  .services
   {
-    width: 290px;
+    height: 500px;
   }
+  
+}
 
-  }
-
-
-  @media only screen and (max-width: 1400px) {
-   
-   #about .container .content #learnmore-button
+@media only screen and (max-width: 1183px) {
+  .caption .c2
   {
-    width: 260px;
+     position: absolute;
+     top: 50%;
+     left: 4%; 
+     font-size: 20px;
   }
+  .caption .c1
+  {
+      position: absolute;
+      top: 20%;
+      left: 3%;
+      font-size: 40px;
+  }
+}
 
-  }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1182px) {
   .caption .c2
   {
      position: absolute;
@@ -503,28 +567,81 @@ body
       width: 600px;
       width: 400px;
   }
-  #review
+}
+
+@media only screen and (max-width: 1090px) {
+  .caption .c2
   {
-    height: 220px;
+     display: none
   }
-  #review .container .review1,.review2,.review3
+  .caption .c1
+  {
+      position: absolute;
+      top: 30%;
+      left: 3%;
+      font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .caption .c1
+  {
+      position: absolute;
+      top: 35%;
+      font-size: 25px;
+    }
+   #about .container .content
+  {
+    position: absolute;
+    top: 16%;
+    width: 86%;
+    height: 430px;
+    background-color: white;
+  }
+
+  #about .container .content #learnmore-button
+  { 
+    width: 250px;
+    height: 50px;
+    background-color: #2B95CA;
+    border: 1px solid #2B95CA;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 0px;
+  }
+
+  #subscribe .container .text1
+  {
+     text-align: center;
+     font-size: 35px;
+     position: absolute;
+     bottom: 100%;
+  }
+  #subscribe .container .text2
+  {
+    font-size: 20px;
+  }
+
+}
+@media only screen and (max-width: 990px)
+{
+    #review
+  {
+    height: 300px;
+  }
+  #review .container .row #review1,#review2,#review3
   {
   width: 500px;
-  height: 220px;
   padding: 15px;
   padding-top: 35px;
-  }
+   }
   #review .container #img1,#img2,#img3
- {
-  margin-top: 10px;
-  margin-left: 100px;
-  border-radius: 50%;
- }
- #about .container .content #learnmore-button
- {
-    width: 230px;
- }
+   {
+    margin-top: 0px;
+    margin-left: 40px;
+   }
 }
+
 @media only screen and (max-width: 900px) {
 
   .caption .c1
@@ -536,47 +653,154 @@ body
       width: 400px;
       display: none;
   }
-}
-@media only screen and (max-width: 1100px) {
 
    #about .container .content #learnmore-button
- {
-    width: 200px;
-    height: 30px;
- }
-}
-@media only screen and (max-width: 1000px) {
-
-   #about .container .content #learnmore-button
- {
-    width: 160px;
-    height: 30px;
- }
- #about .container .content
-{
-  position: absolute;
-  top: 16%;
-  width: 73%;
-  height: 430px;
-  background-color: white;
-}
-}
-@media only screen and (max-width: 1200px) {
-
-  .services
-  {
-    height: 500px;
+  { 
+    width: 220px;
+    height: 50px;
+    background-color: #2B95CA;
+    border: 1px solid #2B95CA;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 0px;
   }
-  
+
+    #about .content #bed
+  {
+    width: 65%;
+    height: 85%;
+    padding-top: 80px;
+    padding-right: 5px;
+  }
 }
+
+
 @media only screen and (max-width: 805px) {
 
   .services
   {
     height: 1100px;
   }
+
+  #review
+  {
+    height: 400px;
+  }
   
 }
+
+@media only screen and (max-width: 800px)
+{
+  #review .container .row #review1,#review2,#review3
+  {
+  width: 500px;
+  height: 135px;
+  padding: 15px;
+  padding-top: 35px;
+   }
+  #review .container #img1,#img2,#img3
+   {
+    margin-top: 0px;
+    margin-left: 40px;
+   }
+
+/*    #about .container .content #learnmore-button
+  { 
+    width: 150px;
+    height: 50px;
+    background-color: #2B95CA;
+    border: 1px solid #2B95CA;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 0px;
+  }
+*/
+ 
+#subscribe .subscribe-content .content
+{
+  display: inline-block;
+  position: relative;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+}
+
+@media only screen and (max-width: 800px){
+
+ 
+  #about
+  {
+    height: 700px;
+  }
+
+  #about .container .content #learnmore-button
+  { 
+    width: 170px;
+    height: 50px;
+    background-color: #2B95CA;
+    border: 1px solid #2B95CA;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 0px;
+  }
+
+  #about .container .content .content-text
+  {
+  padding-top: 40px;
+  padding-left: 12px;
+  font-family: inherit;
+  font-size: 15px;
+  width: 30%;
+  height: 98%;
+  }
+
+  #about .content #bed
+  {
+    width: 65%;
+    height: 75%;
+    padding-top: 100px;
+    padding-right: 5px;
+  }
+
+}
+
+@media only screen and (max-width: 650px){
+
+    #about .container .content #learnmore-button
+  { 
+    width: 150px;
+    height: 40px;
+    background-color: #2B95CA;
+    border: 1px solid #2B95CA;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 0px;
+  }
+
+  #about .container .content .content-text
+  {
+  padding-top: 40px;
+  padding-left: 14px;
+  font-family: inherit;
+  font-size: 12px;
+  width: 30%;
+  height: 98%;
+  }
+
+  #about .content #bed
+  {
+    width: 65%;
+    height: 75%;
+    padding-top: 100px;
+    padding-right: 5px;
+  }
+}
+
+
+
 
 
 /*signup*/
