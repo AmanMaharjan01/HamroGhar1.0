@@ -438,7 +438,15 @@ body
   border: none;
   color: white;
   border-radius: 0px 25px 25px 0px;
+  cursor: pointer;
+  background-color: #2B95CA
 }
+
+#subscribe .subscribe-content .content .sub button:hover
+{
+  background-color: #4C99CE
+}
+
 
 {
   text-align: center;
