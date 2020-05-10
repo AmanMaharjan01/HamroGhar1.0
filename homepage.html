@@ -13,7 +13,6 @@
 <body>
 
 <div class="home">
-<div class="overlay"></div>
 <!--navbar--->
 <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
     <a href="/homepage.html" class="navbar-brand"><img src="img/logo9.png" width="60" height="55"></a>
@@ -69,13 +68,13 @@
    <h4 class="heading"> Book a room in a home </h4><br><br>
      <form>
      <input type="text" id="address" placeholder="Where do you want to go?" autocomplete="off">
-     <i class="fas fa-search" style="position: absolute; top: 27%; left: 11%; color:black; font-size: 20px; "></i>
+     <i id="icon1" class="fas fa-search"></i>
      <br><br><input type="text" id="checkin" placeholder="Checkin">
-     <i class="fas fa-calendar-plus" style="position: absolute; top: 45.5%; left: 8%; color:black; font-size: 20px; "></i>
+     <i id="icon2" class="fas fa-calendar-plus"></i>
      <input type="" id="checkout" placeholder="Checkout">
-     <i class="fas fa-calendar-minus" style="position: absolute; top: 45.5%; left: 42%; color:black; font-size: 20px; "></i>
+     <i id="icon3" class="fas fa-calendar-minus"></i>
      <input type="number" id="quantity" value="1" name="quantity" min="1" max="20">
-     <i class="fas fa-user" style="position: absolute; top: 45.5%; left: 74%; color:black; font-size: 20px; "></i>
+     <i id="icon4" class="fas fa-user"></i>
      <br><br><br><button type="btn btn-primary" id="search"><i class="fas fa-search"></i> Search</button>
    </form>
 </div>
@@ -97,23 +96,23 @@
     	<div id="review1" class="col-md-4">
        <img src="img/user.png" width="100" height="100" id="img1">
        <div class="review-text">
-          <span style="font-size: 15px;">I can only recommend this homestay website!❤️❤️❤️
-          <br><a href="#" style="text-decoration: underline;"> read more </a></span>
+          <span>I can only recommend this homestay website!❤️❤️❤️
+          <br><a href="#" id="readmore"> read more </a></span>
        </div>
        </div>
        <div id="review2" class="col-md-4">
        <img src="img/user3.png" width="90" height="90" id="img2">
          <div class="review-text">
-          <span style="font-size: 15px;">This is the best website for booking homestay!❤️❤️❤️
-            <br><a href="#" style="text-decoration: underline;"> read more</a>
+          <span>This is the best website for booking homestay!❤️❤️❤️
+            <br><a href="#" id="readmore"> read more</a>
           </span>
        </div> 
        </div>   
        <div id="review3" class="col-md-4">
        <img src="img/user4.png" width="100" height="100" id="img3">
        <div class="review-text">
-          <span style="font-size: 15px;">I love this website. Very genuine and valid!🙏🙏🙏🙏🙏
-            <br><a href="#" style="text-decoration: underline;"> read more</a>
+          <span>I love this website. Very genuine and valid!🙏🙏🙏🙏🙏
+            <br><a href="#" id="readmore"> read more</a>
           </span>
        </div>      
        </div> 
@@ -132,7 +131,7 @@
               <div class="content">
 		        <img id="bed" src="img/3.jpg">
 		        <div class="content-text">
-		           <h4>Rent out your spare room</h4><hr>
+		           <center><h4 style="color: #2B95CA;">RENT YOUR ROOM</h4></center><hr>
 		           <p style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif">Earn extra income renting out your spare room to professionals, international students and tourists looking for nightly, weekly and monthly stays.</p>
 		           <br><button class="btn" id="learnmore-button">Learn More</button>
 		        </div>
@@ -149,32 +148,32 @@
 <!---Other services--->
 <div class="services">
   <div class="container">
-    <center><h2 style="color: #2B95CA; font-family: 'Nanum Myeongjo', serif;">Other Services</h2></center>
+	<center><p>OUR SERVICES</p></center>
     <div class="row col-md-12">
         <div class="service1 col-md-4">
             <div class="content">
               <img id="services-logo" src="img/plane.png" width="80" height="80">
-              <div style="float: right; margin-top: 10px;">
-              <span style="font-size: 22px">Flight</span><br>
-              <span style="font-size: 16px;">Get the lowest rates on air fare!</span>
+              <div id="service-content">
+              <span id="s-logo">Flight</span><br>
+              <span id="s-text">Get the lowest rates on air fare!</span>
               </div>
             </div>
         </div>
         <div class="service2 col-md-4">
           <div class="content">
            <img id="services-logo" src="img/hotel.png" width="70" height="70">
-           <div style="float: right; margin-top: 10px;">
-              <span style="font-size: 22px">Hotels</span><br>
-              <span style="font-size: 16px;">Find the hotels for the best price!</span>
+           <div id="service-content">
+              <span id="s-logo">Hotels</span><br>
+              <span id="s-text">Find the hotels for the best price!</span>
               </div>
          </div>
         </div>
         <div class="service3 col-md-4">
           <div class="content">
            <img id="services-logo" src="img/car.png" width="70" height="70">
-             <div style="float: right; margin-top: 10px;">
-             <span style="font-size: 22px">Cars</span><br>
-             <span style="font-size: 16px;">Choose any car on the shop to get <br> your destination!</span>
+             <div id="service-content">
+             <span id="s-logo">Cars</span><br>
+             <span id="s-text">Choose any car on the shop to get <br> your destination!</span>
              </div>
         </div>
         </div>
@@ -183,27 +182,27 @@
         <div class="service4 col-md-4">
           <div class="content">
           <img id="services-logo" src="img/crusis.png" width="70" height="70">
-             <div style="float: right; margin-top: 10px;">
-             <span style="font-size: 22px">Cruises</span><br>
-             <span style="font-size: 16px;">Let the finest crusie lines get you<br> to your destination!</span>
+             <div id="service-content">
+             <span id="s-logo">Cruises</span><br>
+             <span id="s-text">Let the finest crusie lines get you<br> to your destination!</span>
              </div>
            </div>
         </div>
         <div class="service5 col-md-4">
           <div class="content">
           <img id="services-logo" src="img/beach.png" width="70" height="70">
-            <div style="float: right; margin-top: 10px;">
-            <span style="font-size: 22px">Vacation Rentals</span><br>
-            <span style="font-size: 16px;">Book your own destination with<br> vacation rentals!</span>
+            <div id="service-content">
+            <span id="s-logo">Vacation Rentals</span><br>
+            <span id="s-text">Book your own destination with<br> vacation rentals!</span>
             </div>
         </div>
         </div>
         <div class="service6 col-md-4">
           <div class="content">
           <img id="services-logo" src="img/train.jfif" width="70" height="70" style="border-radius: 50%;">
-            <div style="float: right; margin-top: 10px;">
-            <span style="font-size: 22px">Train</span><br>
-            <span style="font-size: 16px;">Get train tickey ar the lowest<br> rates!</span>
+            <div id="service-content">
+            <span id="s-logo">Train</span><br>
+            <span id="s-text">Get train tickey ar the lowest<br> rates!</span>
             </div>
         </div>
         </div>
@@ -231,7 +230,7 @@
          </div>  
      </div>
 </div>
-<div id="footer" style="border: 1px solid black;"> 
+<div id="footer"> 
      <div class="container">
      	   <center>
            <div id="logos">

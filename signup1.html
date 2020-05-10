@@ -2,11 +2,11 @@
 <html>
 <head>
   <link rel="icon" href="img/logo9.png">
-	<title>HamroGhar</title>
+  <title>HamroGhar</title>
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap-theme.min.css">
   <link rel="stylesheet" type="text/css" href="css/signin.css">
 </head>
 
@@ -15,7 +15,7 @@
 <div class="home">
 <div class="overlay"></div>
 <!--navbar--->
-<nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+   <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
     <a href="homepage.html" class="navbar-brand"><img src="img/logo9.png" width="60" height="55"></a>
     <button class="navbar-toggler" data-toggle="collapse" data-target="#co">
       <span class="navbar-toggler-icon"></span>
@@ -29,63 +29,96 @@
 
     <!--sign in-->
 
-    <div class="signin" style="height: 530px;"> 
+  <div class="signin" style="height: 600px;"> 
+    <div class="row">
+      <div class="col-md-4">
+        
+      </div>
+      <div class="col-md-4">
+        <div id="wrapper" style="height: 520px;">
+          <span class="heading"><a href="homepage.html"><i id="back-logo" class="fas fa-chevron-left" ></i></a> <img src="img/logo7.png" width="90" height="95">Account</span>     
+           <div class="content">
+           <h4 class="caption"><b>Create Account</b></h4>
+           <span>Create an account to easily use HamroGhar's services.</span><br><br>
+            
+                   <div class="form-group">
+                     <label for="exampleInputEmail1">Email</label>
+                     <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+                   </div>           
+                   <a href="signup2.html">      
+                   <button type="btn btn-primary" id="search">Get started</button>
+                  </a>
+              
+           </div>
+           <hr>
+           <center><p style="font-size: 15px;">or sign in with one click</p></center>
+               <div class="other">
+                  <div class="row">
+                    <div id="col" class="col-sm-4">
+                        <div class="facebook">
+                            <a href="http://www.facebook.com/">
+                           <div class="content1">
+                           <center><span><img src="img/facebook.png" width="22" height="22"></span></center>
+                           <center><span style="font-size: 14px;">Facebook</span></center>
+                           </div>
+                         </a>
+                        </div>
+                    </div>
+                    <div id="col" class="col-sm-4">
+                          <div class="facebook">
+                            <a href="http://www.google.com/">
+                           <div class="content1">
+                           <center><span><img src="img/google.png" width="25" height="25"></span></center>
+                           <center><span style="font-size: 14px;">Google</span></center>
+                           </div>
+                         </a>
+                        </div>
+                    </div>
+                    <div id="col" class="col-sm-4">
+                         <div class="facebook">
+                            <a href="http://www.apple.com/">
+                           <div class="content1">
+                           <center><span><img src="img/apple.png" width="22" height="22"></span></center>
+                           <center><span style="font-size: 14px;">Apple</span></center>
+                           </div>
+                         </a>
+                        </div>
+                    </div>
+                  </div>
+               </div>
+               <br>
+          </div>  
+       </div>
+       <div class="col-md-4">
+         
+       </div> 
 
-     <span class="heading"><a href="homepage.html"><i class="fas fa-chevron-left" style="font-size: 22px; cursor: pointer; color: #CA005D"></i></a> <img src="img/logo7.png" width="90" height="95" style="padding-bottom: 10px;">Account</span>
-     
-     <div class="content">
-     <h4 class="caption"><b>Create Account</b></h4>
-     <span>Create an account to easily use HamroGhar's services.</span><br><br>
-     <form>
-         <div class="form-group">
-           <label for="exampleInputEmail1">Email address</label>
-           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
-        </div>
-          <button type="submit" id="search"><a href="signup2.html" style="text-decoration: none; color: white;">Get started</a></button>
-        <br>
-        <hr>
-        <center><p style="font-size: 15px;">or sign in with one click</p></center>
-        <div class="other">
-        <div class="facebook">
-            <a href="http://www.facebook.com/" style="text-decoration: none;">
-           <div class="content1" style="padding-top: 10px; color: #4267b2;">
-           <center><span><img src="img/facebook.png" width="22" height="22"></span></center>
-           <center><span style="font-size: 14px;">Facebook</span></center>
-           </div>
-         </a>
-        </div>
-        <div class="google">
-          <a href="http://www.facebook.com/" style="text-decoration: none;">
-          <div class="content2" style="padding-top: 10px; color: #4267b2;">
-           <center><span><img src="img/google.png" width="25" height="25"></span></center>
-           <center><span style="font-size: 14px;">Google</span></center>
-           </div>
-           </a>
-        </div>
-        <div class="apple">
-          <a href="http://www.facebook.com/" style="text-decoration: none;">
-          <div class="content3" style="padding-top: 10px; color: #000;">
-           <center><span><img src="img/apple.png" width="22" height="22"></span></center>
-           <center><span style="font-size: 14px; color: #4267b2;">Apple</span></center>
-          </div>
-           </a>
-           </div>
-        </div>
-        </div>
-        <br>
-    </form>
      </div>     
-    </div>
-
-    <!---end of signin--->
-    <div class="footer" style="position: absolute; top: 83%; left: 37%; width: 390px">
-        <center><p style="font-size: 13px;">By signing in or creating an account, you agree with our <a href="#" style="text-decoration: none;">Terms & conditions</a> and <a href="#" style="text-decoration: none;">Privacy statement</a></p></center>
+  </div>
+  <div class="footer">
+     <div class="row">
+      <div class="col-md-4">
+      </div>
+      <div class="col-md-4">
+        <div id="wrapper"> 
+        <center><p>By signing in or creating an account, you agree with our <a href="#" style="">Terms & conditions</a> and <a href="#" style="text-decoration: none;">Privacy statement</a></p></center>
 
         <hr>
 
         <center><p style="font-size: 13px;">All rights reserved.<br>
         Copyright (2019 - 2020) - HamroGhar.com™</p> </center>
+       </div>
     </div>
+    <div class="col-md-4">
+      
+    </div>
+  </div>
+  </div>
+    
+
+
+
+    <!---end of signin--->
 
 <!---script--->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

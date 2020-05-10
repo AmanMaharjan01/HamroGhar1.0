@@ -47,14 +47,45 @@ body
 .signin
 {
    font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-   background-color: #ffffff;
-   width: 400px;
-   height: 570px;
-   position: absolute;
-   top: 5%;
-   left: 50%;
-   transform: translateX(-50%);
+   width: 100%;
+   height: 550px;
    border: 8px solid #efefef;
+}
+
+.signin .row
+{
+  height: 100%;
+}
+
+.signin .row #wrapper
+{
+  background-color: #fff;
+  width: 78%;
+  height: 450px;
+  margin-left: 50px;
+  margin-top: 38px;
+}
+
+.signin #back-logo
+{
+  font-size: 22px; 
+  cursor: pointer; 
+  color: #CA005D
+}
+
+.signin img
+{
+  padding-bottom: 10px;
+}
+
+.signin .content a
+{
+  color: black;
+}
+
+.signin .content #search
+{
+  cursor: pointer;
 }
 
 .signin .heading
@@ -71,6 +102,8 @@ body
     padding-right: 20px;
 }
 
+.signin .content 
+
 .signin .content span
 {
 	font-size: 15px;
@@ -85,32 +118,54 @@ body
     color: white;
 }
 
-.signin .content .other
+.footer .row #wrapper
 {
-  display: flex;
+   width: 78%;
+   margin-left: 50px;
 }
 
-.signin .content .facebook,.google,.apple 
+.footer .row #wrapper p
 {
-	width: 150px;
-	height: 70px;
-	border: 1px solid #CA005D;
-	cursor: pointer;
-}
-.signin .content .facebook,.google
-{
-margin-right: 7px;
+  font-size: 13px;
 }
 
-.signin .content .facebook:hover
+.footer .row #wrapper p a
+{
+  text-decoration: none;
+}
+
+.signin .row .other
+{
+  height: 80px;
+}
+
+.signin .row .other .row
+{
+  margin: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.signin .row .other .row .content1
+{
+  padding-top: 10px;
+  color: #4267b2;
+  border: 1px solid #CA005D;;
+  width: 105px;
+  height: 70px; 
+}
+
+.signin .row .other .row #col
+{
+   padding: 0px;
+}
+
+.signin .row .other .row #col .content1:hover
 {
    background-color: #fcebf4;
 }
-.signin .content .google:hover
+
+.signin .row .other .row #col img
 {
-   background-color: #fcebf4;
-}
-.signin .content .apple:hover
-{
-   background-color: #fcebf4;
+  padding: 0px;
 }
