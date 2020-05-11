@@ -410,9 +410,10 @@ body
 
 #subscribe .subscribes .content .text
 {
-  font-size: 37px;
+  font-size: 48px;
   color: #2B95CA;
-  text-transform: uppercase; 
+  text-transform: uppercase;
+  padding-bottom: 2px; 
 }
 
 #subscribe .subscribes .content .text2
